@@ -1,6 +1,4 @@
-Travis Gilbert
-
-I just really like infrastructure.
+I love infrastructure.
 
 ## Theorem
 An agent harness. Typed memory that persists across sessions, coordination that lets multiple coding agents (Claude Code, Codex) work the same repository through shared state instead of stepping on each other, and 60+ MCP tools in production. CommonPlace is the knowledge surface it pairs with; together they form the full harness.
