@@ -9,7 +9,7 @@ Underneath sits RustyRed, a multi-model database written in Rust across 65+ crat
 
 The learned layer is Theseus: GNN and knowledge-graph-embedding enrichment, learned rerankers, reinforcement-learning tool selection, and graph-fused language models trained with LoRA on rented GPUs. The graph reasons. The LLM expresses.
 
-##Also built:
+## Also built:
 
 ### our-civic-atlas: 
 A geospactial planning app. Never forget where you put your keys or run a multimillion dollar infrastructure project.
