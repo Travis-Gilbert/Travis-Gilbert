@@ -1,4 +1,4 @@
-I build infrastructure for AI agents: memory that survives the session, coordination that survives more than one agent, and results you can check.
+
 
 ## Theorem
 
