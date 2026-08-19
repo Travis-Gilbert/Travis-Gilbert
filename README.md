@@ -8,13 +8,11 @@ Underneath sits **RustyRed**, a multi-model database written in Rust, over 100 c
 
 Measured, not asserted: on a 20,000-node / 40,000-edge graph it sustains roughly 8,300 node upserts per second and answers Personalized PageRank in 27 ms median, full round trip, reproducible from a one-command harness.
 
-A trimmed standalone release is public under MIT, with a live read-only instance you can point an agent at.
+A trimmed standalone release is public under MIT (an older public snapshot; a current extraction is still landing), with a live read-only instance you can point an agent at.
 
-[RustyRed GraphDB](https://github.com/Travis-Gilbert/RustyRed-Graph-Database) · [one-click deploy](https://railway.com/new/template/rustyred-graphdb)
+[RustyRed GraphDB](https://github.com/Travis-Gilbert/RustyRed-Graph-Database) — older public snapshot
 
-The learned layer is **Theseus**: GNN and knowledge-graph-embedding enrichment, learned rerankers, reinforcement-learning tool selection, and graph-fused language models trained with LoRA on rented GPUs. The graph reasons. The LLM expresses.
-
-[Graph-fused Gemma 31B image](https://github.com/users/Travis-Gilbert/packages/container/package/theseus-gemma-31b-glfusion)
+The learned layer is **rustyred-ml**, Theorem's learned layer: GNN and knowledge-graph-embedding enrichment, learned rerankers, reinforcement-learning tool selection, and graph-fused language models trained with LoRA on rented GPUs. The graph reasons. The LLM expresses.
 
 ## Also built
 
@@ -30,7 +28,7 @@ Designed, built, and operate a production Django/PostGIS/GraphQL/Next.js complia
 
 Rust (tokio, axum) · Python (Django, PyTorch) · TypeScript (Next.js) · PostgreSQL/PostGIS · Tauri · SwiftUI
 
-Deploys on Railway. Trains on RunPod.
+Deploys on Fly.io. Trains on RunPod.
 
 ## Contact
 
