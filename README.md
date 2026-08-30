@@ -1,28 +1,30 @@
+--->
+Name: Travis Gilbert
+Type: ML Engineer
+Ambition: Solve interesting problems. Optimize those solutions. Optimize those Optimizations. Repeat.
+---
 
+I love infrastructure, digital and otherwise.
 
-## Theorem
+## Working on now
 
-An agent harness. Typed memory that persists across sessions, coordination that lets multiple coding agents (Claude Code, Codex) work the same repository through shared state instead of stepping on each other, and 60+ MCP tools in production. CommonPlace is the knowledge surface it pairs with; together they form the full harness.
+**[Turvo](https://github.com/Travis-Gilbert/Turvo).** Tauri + Servo engine. One renderer version compiled into the application, so Linux, Windows, and macOS stop quietly selecting different system webviews. The target is an Electron-class app shell that does not bundle Chromium. Pre-release: three-platform CI compiles green, runtime proof is still being collected, and the performance claims stay unmade until there is a reproducible benchmark suite. MIT or Apache-2.0.
 
-Underneath sits **RustyRed**, a multi-model database written in Rust, over 100 crates in the working monorepo: a property-graph core with vector, lexical, and spatial retrieval, a relational query planner, and git-style versioning of graph state. Commit the graph, diff it, branch it, merge it. Fork an agent's memory the way you fork a repo. It speaks the Postgres wire protocol and Redis RESP, so existing clients connect without a new driver.
+**[Theorem](https://github.com/Travis-Gilbert/Theorems-Harness).** A machine learning agent harness. Turn your API keys into a life agent, with it's own computer, browser, CRM and the ability to coordinate and with any other agent using the harness.  Because the harness runs on a machine learning layer composed of Bayesian inference, neural networks, Beta-Bernoulli (there's more but you get it) theorem is designed to be a machine that learns about you, your work, whatever you point it at, and to be trustworthy and competent.  Enough to implement and improve on those things, with or without you. 
 
-Measured, not asserted: on a 20,000-node / 40,000-edge graph it sustains roughly 8,300 node upserts per second and answers Personalized PageRank in 27 ms median, full round trip, reproducible from a one-command harness.
+**[Django-thoerem](https://github.com/Travis-Gilbert/Django-Theorem.git)** Rust is the runtime. Python is how we improve the runtime. Machine learning and agentic observability, data science, and an experience-to-skill encoder. 
 
-A trimmed standalone release is public under MIT (an older public snapshot; a current extraction is still landing), with a live read-only instance you can point an agent at.
+**[Physical](https://github.com/Travis-Gilbert/Physical).** Media you can touch. Weird right?
 
-[RustyRed GraphDB](https://github.com/Travis-Gilbert/RustyRed-Graph-Database) — older public snapshot
-
-The learned layer is **rustyred-ml**, Theorem's learned layer: GNN and knowledge-graph-embedding enrichment, learned rerankers, reinforcement-learning tool selection, and graph-fused language models trained with LoRA on rented GPUs. The graph reasons. The LLM expresses.
+**[Our Civic Atlas](https://github.com/Travis-Gilbert/our-civic-atlas).** Geospatial planning. Track a set of keys or a multimillion dollar capital project on the same map. Flint is the first city, But you can deploy and map anyplace (as long as that place is a city).
 
 ## Also built
 
-**our-civic-atlas**: a geospatial planning app. Track a set of keys or a multimillion dollar infrastructure project on the same map.
+GL Fused Gemma 31B - [Graph Language Fusion](ghcr.io/travis-gilbert/theseus-gemma-31b-glfusion:2026-05-29-a31b-runsync-stage2gcc) This is a post-trained Gemma 4 31B that has been graph language fused. 
 
-**RustyWeb**: search, scrape, and aggregation in Rust, built on DATAWAVE. Connects to RustyRed, Valkey, and Postgres, and composes to the shape of whatever workflow it feeds.
+**[RustyWeb](https://github.com/Travis-Gilbert/RustyWeb).** Search, scrape, and aggregation in Rust, built on DATAWAVE. Connects to RustyRed, Valkey, and Postgres, and composes to the shape of whatever workflow it feeds.
 
-## Day job
-
-Designed, built, and operate a production Django/PostGIS/GraphQL/Next.js compliance platform for a county land bank: a fifteen-thousand-parcel portfolio with roughly eight hundred properties active in inspection workflows, six platforms collapsed into one operating surface, and automated weekly reporting.
+**[compliance-inspection-tracker](https://github.com/Travis-Gilbert/compliance-inspection-tracker).** Desk research triage for land bank compliance staff. CSV in, CSV out, Street View imagery, heuristic vacancy detection.
 
 ## Stack
 
@@ -34,4 +36,8 @@ Deploys on Fly.io. Trains on RunPod.
 
 Open to ML systems, backend engineering, and agent infrastructure work. If you have an interesting computer science problem outside those, send it anyway.
 
-[travisgilbert.me](https://travisgilbert.me) · 1travisgilbert@gmail.com
+[travisgilbert.me](https://travisgilbert.me) · [1travisgilbert@gmail.com](mailto:1travisgilbert@gmail.com)
+
+My day job is a county land bank in Flint. I designed, built, and operate the platform its staff runs on: Django, PostGIS, GraphQL, Next.js, a fifteen-thousand-parcel portfolio, roughly 15,000 indexed properties moving through inspection workflows.  
+
+The rest of the time I work a layer down: databases, runtimes, and the harness coding agents run inside. Rust mostly, Python and TypeScript where they earn it.
