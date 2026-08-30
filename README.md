@@ -1,4 +1,4 @@
-===
+
 Name: Travis Gilbert
 Type: ML Engineer
 Ambition: Solve interesting problems. Optimize those solutions. Optimize those Optimizations. Repeat.
