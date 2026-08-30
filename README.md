@@ -1,8 +1,9 @@
-
-Name: Travis Gilbert
-Type: ML Engineer
-Ambition: Solve interesting problems. Optimize those solutions. Optimize those Optimizations. Repeat.
-===
+---
+name: Travis Gilbert
+type: ML Engineer
+ambition: >-
+  Solve interesting problems. Optimize those solutions. Optimize those optimizations. Repeat.
+---
 
 I love infrastructure, digital and otherwise.
 
